@@ -6,7 +6,7 @@ Pod::Spec.new do |s|
   s.license      = "MIT"
   s.author             = { "刘冲" => "liuchongfaye@163.com" }
   s.source       = { :git => "https://github.com/liuchongfaye/NSUserDefaultsModel.git", :tag => "#{s.version}" }
-  s.source_files  = "NSUserDefaultsModel/*.{h,m}"
+  s.source_files  = "iOS-Objc/*.{h,m}"
   s.ios.deployment_target = '4.0'
   s.requires_arc = true
 end
