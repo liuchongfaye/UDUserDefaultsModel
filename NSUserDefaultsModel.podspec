@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "NSUserDefaultsModel"
-  s.version      = "1.0.2"
+  s.version      = "1.0.0"
   s.summary      = "NSUserDefaultsModel:A library to manager the values saved by NSUserDefaults."
   s.homepage     = "https://github.com/liuchongfaye/NSUserDefaultsModel"
   s.license      = "MIT"
