@@ -15,6 +15,8 @@
 		449289232103457B00E68969 /* NSUserDefaultsModelTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 449289222103457B00E68969 /* NSUserDefaultsModelTests.m */; };
 		4492892E2103457B00E68969 /* NSUserDefaultsModelUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4492892D2103457B00E68969 /* NSUserDefaultsModelUITests.m */; };
 		4492893E2103463800E68969 /* NSUserDefaultsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4492893C2103463800E68969 /* NSUserDefaultsModel.m */; };
+		449289492105798D00E68969 /* LCUserDefaultsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 449289482105798D00E68969 /* LCUserDefaultsModel.m */; };
+		4492894C210579D700E68969 /* LCRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4492894B210579D700E68969 /* LCRootViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,10 @@
 		4492892F2103457C00E68969 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4492893C2103463800E68969 /* NSUserDefaultsModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSUserDefaultsModel.m; sourceTree = "<group>"; };
 		4492893D2103463800E68969 /* NSUserDefaultsModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSUserDefaultsModel.h; sourceTree = "<group>"; };
+		449289472105798D00E68969 /* LCUserDefaultsModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCUserDefaultsModel.h; sourceTree = "<group>"; };
+		449289482105798D00E68969 /* LCUserDefaultsModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCUserDefaultsModel.m; sourceTree = "<group>"; };
+		4492894A210579D700E68969 /* LCRootViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LCRootViewController.h; sourceTree = "<group>"; };
+		4492894B210579D700E68969 /* LCRootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LCRootViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,9 +107,12 @@
 		449289082103457A00E68969 /* NSUserDefaultsModel */ = {
 			isa = PBXGroup;
 			children = (
+				449289462104411800E68969 /* Demo-Objc */,
 				4492893B210345F100E68969 /* iOS-Objc */,
 				449289092103457A00E68969 /* AppDelegate.h */,
 				4492890A2103457A00E68969 /* AppDelegate.m */,
+				4492894A210579D700E68969 /* LCRootViewController.h */,
+				4492894B210579D700E68969 /* LCRootViewController.m */,
 				4492890F2103457A00E68969 /* Main.storyboard */,
 				449289122103457B00E68969 /* Assets.xcassets */,
 				449289142103457B00E68969 /* LaunchScreen.storyboard */,
@@ -138,6 +147,15 @@
 				4492893C2103463800E68969 /* NSUserDefaultsModel.m */,
 			);
 			path = "iOS-Objc";
+			sourceTree = "<group>";
+		};
+		449289462104411800E68969 /* Demo-Objc */ = {
+			isa = PBXGroup;
+			children = (
+				449289472105798D00E68969 /* LCUserDefaultsModel.h */,
+				449289482105798D00E68969 /* LCUserDefaultsModel.m */,
+			);
+			path = "Demo-Objc";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -271,8 +289,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				4492893E2103463800E68969 /* NSUserDefaultsModel.m in Sources */,
+				4492894C210579D700E68969 /* LCRootViewController.m in Sources */,
 				449289192103457B00E68969 /* main.m in Sources */,
 				4492890B2103457A00E68969 /* AppDelegate.m in Sources */,
+				449289492105798D00E68969 /* LCUserDefaultsModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
