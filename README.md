@@ -1,5 +1,6 @@
 # NSUserDefaultsModel
- Manage the values saved by NSUserdefaults
+ Manage the values saved by NSUserdefaults.
+ Blog:https://www.jianshu.com/p/681ef055f716
 
 ## How to use
 
