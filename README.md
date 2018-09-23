@@ -5,7 +5,7 @@
 
 ## How to use
 
-Create a subclass of 'NSUserDefaultsModel' and declare some properties in '.h', like this:
+Create a subclass of 'NSUserDefaultsModel' and declare some properties in '.h', like this:(创建一个基于NSUserDefaultsModel的子类，并在.h文件里定义一些属性，这些属性就是用来保存数值的key值)
 ```
 // .h
 @property (nonatomic, copy)    NSString *name;
@@ -15,7 +15,7 @@ Create a subclass of 'NSUserDefaultsModel' and declare some properties in '.h', 
 @property (nonatomic, assign)  double doubleNumber;
 @property (nonatomic, assign)  BOOL isMan;
 ```
-Next,you must make those properties `@dynamic` in the .m file,like this:
+Next,you must make those properties `@dynamic` in the .m file,like this:（接下来，必须要在.m当中对每一个属性执行'@dynamic'操作）
 ```
 // .m
 @dynamic name;
@@ -27,9 +27,10 @@ Next,you must make those properties `@dynamic` in the .m file,like this:
 ```
 If you want to get the 'name', you just use `[Subclass userDefaultsModel].name`.
 If you want to set the 'name' and save it, you just use `[Subclass userDefaultsModel].name = @"nickname"`.
+(如果想获取'name'这个属性，只需要使用 `[Subclass userDefaultsModel].name`就行，重置'name'，只需要调用`[Subclass userDefaultsModel].name = @"nickname"`就可以)
 
 ### Setup default values
-If you want to set some default values, you just override the method `setupDefaultValues` in .m file,like this:
+If you want to set some default values, you just override the method `setupDefaultValues` in .m file,like this:(设置默认值)
 ```
 // Setup default values
 - (NSDictionary *)setupDefaultValues {
