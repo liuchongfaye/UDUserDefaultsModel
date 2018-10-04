@@ -29,4 +29,8 @@
              };
 }
 
+- (NSString *)_suiteName {
+    return @"lc.UserDefatults";
+}
+
 @end

@@ -31,4 +31,9 @@ typedef NS_ENUM(NSInteger, NSUserDefaultsValueType) {
  */
 - (NSDictionary *)setupDefaultValues;
 
+/**
+ * Override this method,you can setup NSUserDefaults‘ suiteName.
+ */
+- (NSString *)_suiteName;
+
 @end
