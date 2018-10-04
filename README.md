@@ -44,6 +44,13 @@ If you want to set some default values, you just override the method `setupDefau
              };
 }
 ```
+
+如果想要设置NSUserDefaults的suiteName，那么要在子类里重写`_suiteName`方法,比如：
+```
+- (NSString *)_suiteName {
+    return @"lc.UserDefatults";
+}
+```
 #### Installation
 You can download this project and drag the code in the 'iOS-Objc' folder to your project.
 Of course，you can use Cocoapods.To install it simply add the following line to your Podfile:
