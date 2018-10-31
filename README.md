@@ -1,4 +1,4 @@
-# NSUserDefaultsModel
+# UDUserDefaultsModel
  统一管理那些使用NSUserdefaults保存的值.  
  Blog:https://www.jianshu.com/p/681ef055f716  
  YIIFMDB:https://github.com/liuchongfaye/YIIFMDB (FMDB改进方案)  
@@ -6,7 +6,7 @@
 
 ## How to use
 
-Create a subclass of 'NSUserDefaultsModel' and declare some properties in '.h', like this:(创建一个基于NSUserDefaultsModel的子类，并在.h文件里定义一些属性，这些属性就是用来保存数值的key值)
+Create a subclass of 'UDUserDefaultsModel' and declare some properties in '.h', like this:(创建一个基于UDUserDefaultsModel的子类，并在.h文件里定义一些属性，这些属性就是用来保存数值的key值)
 ```
 // .h
 @property (nonatomic, copy)    NSString *name;
@@ -56,6 +56,8 @@ If you want to set some default values, you just override the method `setupDefau
 You can download this project and drag the code in the 'iOS-Objc' folder to your project.
 Of course，you can use Cocoapods.To install it simply add the following line to your Podfile:
 ```
-pod 'NSUserDefaultsModel'
+pod 'UDUserDefaultsModel'
+
+
 ```
 
