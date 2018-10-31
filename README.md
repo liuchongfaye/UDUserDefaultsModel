@@ -1,6 +1,7 @@
 # NSUserDefaultsModel
  统一管理那些使用NSUserdefaults保存的值.  
- Blog:https://www.jianshu.com/p/681ef055f716   
+ Blog:https://www.jianshu.com/p/681ef055f716  
+ YIIFMDB:https://github.com/liuchongfaye/YIIFMDB (FMDB改进方案)  
  **注意:好多人跟我说以“NS”开头不好，我仔细想了想的确是有待改善，后续的库我会稍加注意。**
 
 ## How to use
@@ -42,6 +43,13 @@ If you want to set some default values, you just override the method `setupDefau
              @"doubleNumber": @22.2,
              @"isMan": @YES,
              };
+}
+```
+
+如果想要设置NSUserDefaults的suiteName，那么要在子类里重写`_suiteName`方法,比如：
+```
+- (NSString *)_suiteName {
+    return @"lc.UserDefatults";
 }
 ```
 #### Installation
