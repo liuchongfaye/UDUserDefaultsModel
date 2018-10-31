@@ -14,7 +14,7 @@
 		449289192103457B00E68969 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 449289182103457B00E68969 /* main.m */; };
 		449289232103457B00E68969 /* NSUserDefaultsModelTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 449289222103457B00E68969 /* NSUserDefaultsModelTests.m */; };
 		4492892E2103457B00E68969 /* NSUserDefaultsModelUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4492892D2103457B00E68969 /* NSUserDefaultsModelUITests.m */; };
-		4492893E2103463800E68969 /* NSUserDefaultsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4492893C2103463800E68969 /* NSUserDefaultsModel.m */; };
+		4492893E2103463800E68969 /* UDUserDefaultsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4492893C2103463800E68969 /* UDUserDefaultsModel.m */; };
 		449289492105798D00E68969 /* LCUserDefaultsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 449289482105798D00E68969 /* LCUserDefaultsModel.m */; };
 		4492894C210579D700E68969 /* LCRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4492894B210579D700E68969 /* LCRootViewController.m */; };
 /* End PBXBuildFile section */
@@ -51,8 +51,8 @@
 		449289292103457B00E68969 /* NSUserDefaultsModelUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NSUserDefaultsModelUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4492892D2103457B00E68969 /* NSUserDefaultsModelUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSUserDefaultsModelUITests.m; sourceTree = "<group>"; };
 		4492892F2103457C00E68969 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4492893C2103463800E68969 /* NSUserDefaultsModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSUserDefaultsModel.m; sourceTree = "<group>"; };
-		4492893D2103463800E68969 /* NSUserDefaultsModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSUserDefaultsModel.h; sourceTree = "<group>"; };
+		4492893C2103463800E68969 /* UDUserDefaultsModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UDUserDefaultsModel.m; sourceTree = "<group>"; };
+		4492893D2103463800E68969 /* UDUserDefaultsModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UDUserDefaultsModel.h; sourceTree = "<group>"; };
 		449289472105798D00E68969 /* LCUserDefaultsModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCUserDefaultsModel.h; sourceTree = "<group>"; };
 		449289482105798D00E68969 /* LCUserDefaultsModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCUserDefaultsModel.m; sourceTree = "<group>"; };
 		4492894A210579D700E68969 /* LCRootViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LCRootViewController.h; sourceTree = "<group>"; };
@@ -143,8 +143,8 @@
 		4492893B210345F100E68969 /* iOS-Objc */ = {
 			isa = PBXGroup;
 			children = (
-				4492893D2103463800E68969 /* NSUserDefaultsModel.h */,
-				4492893C2103463800E68969 /* NSUserDefaultsModel.m */,
+				4492893D2103463800E68969 /* UDUserDefaultsModel.h */,
+				4492893C2103463800E68969 /* UDUserDefaultsModel.m */,
 			);
 			path = "iOS-Objc";
 			sourceTree = "<group>";
@@ -288,7 +288,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4492893E2103463800E68969 /* NSUserDefaultsModel.m in Sources */,
+				4492893E2103463800E68969 /* UDUserDefaultsModel.m in Sources */,
 				4492894C210579D700E68969 /* LCRootViewController.m in Sources */,
 				449289192103457B00E68969 /* main.m in Sources */,
 				4492890B2103457A00E68969 /* AppDelegate.m in Sources */,

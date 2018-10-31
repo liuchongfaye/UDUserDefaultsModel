@@ -1,6 +1,6 @@
 //
-//  NSUserDefaultsModel.h
-//  NSUserDefaultsModel
+//  UDUserDefaultsModel.h
+//  UDUserDefaultsModel
 //
 //  Created by liuchong on 2018/7/19.
 //  Copyright © 2018年 lc. All rights reserved.
@@ -8,17 +8,17 @@
 
 #import <Foundation/Foundation.h>
 
-@interface NSUserDefaultsModel : NSObject
+@interface UDUserDefaultsModel : NSObject
 
 // Value types
-typedef NS_ENUM(NSInteger, NSUserDefaultsValueType) {
-    NSUserDefaultsValueTypeInteger,         // NSInteger
-    NSUserDefaultsValueTypeLong,            // Include:long,long long,short and unsigned
-    NSUserDefaultsValueTypeFloat,
-    NSUserDefaultsValueTypeDouble,
-    NSUserDefaultsValueTypeBool,
-    NSUserDefaultsValueTypeObject,
-    NSUserDefaultsValueTypeUnknown
+typedef NS_ENUM(NSInteger, UDUserDefaultsValueType) {
+    UDUserDefaultsValueTypeInteger,         // NSInteger
+    UDUserDefaultsValueTypeLong,            // Include:long,long long,short and unsigned
+    UDUserDefaultsValueTypeFloat,
+    UDUserDefaultsValueTypeDouble,
+    UDUserDefaultsValueTypeBool,
+    UDUserDefaultsValueTypeObject,
+    UDUserDefaultsValueTypeUnknown
 };
 
 // Init

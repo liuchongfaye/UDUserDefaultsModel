@@ -1,22 +1,22 @@
 //
-//  NSUserDefaultsModel.m
-//  NSUserDefaultsModel
+//  UDUserDefaultsModel.m
+//  UDUserDefaultsModel
 //
 //  Created by liuchong on 2018/7/19.
 //  Copyright © 2018年 lc. All rights reserved.
 //
 
-#import "NSUserDefaultsModel.h"
+#import "UDUserDefaultsModel.h"
 #import <objc/runtime.h>
 
-@interface NSUserDefaultsModel ()
+@interface UDUserDefaultsModel ()
 
 @property (nonatomic, strong) NSMutableDictionary *properties;
 @property (nonatomic, strong) NSUserDefaults *userDefaults;
 
 @end
 
-@implementation NSUserDefaultsModel
+@implementation UDUserDefaultsModel
 
 #pragma mark - Init
 
@@ -144,12 +144,12 @@
  */
 
 // Object
-static id getObgectValue(NSUserDefaultsModel *model, SEL sel) {
+static id getObgectValue(UDUserDefaultsModel *model, SEL sel) {
     NSUserDefaults *userDefaults = model.userDefaults;
     return [userDefaults objectForKey:model.properties[NSStringFromSelector(sel)]];
 }
 
-static void setObjectValue(NSUserDefaultsModel *model, SEL sel, id value) {
+static void setObjectValue(UDUserDefaultsModel *model, SEL sel, id value) {
     NSUserDefaults *userDefaults = model.userDefaults;
     if (value) {
         [userDefaults setObject:value forKey:model.properties[NSStringFromSelector(sel)]];
@@ -160,60 +160,60 @@ static void setObjectValue(NSUserDefaultsModel *model, SEL sel, id value) {
 }
 
 // Bool
-static BOOL getBoolValue(NSUserDefaultsModel *model, SEL sel) {
+static BOOL getBoolValue(UDUserDefaultsModel *model, SEL sel) {
     NSUserDefaults *userDefaults = model.userDefaults;
     return [userDefaults boolForKey:model.properties[NSStringFromSelector(sel)]];
 }
 
-static void setBoolValue(NSUserDefaultsModel *model, SEL sel, BOOL value) {
+static void setBoolValue(UDUserDefaultsModel *model, SEL sel, BOOL value) {
     NSUserDefaults *userDefaults = model.userDefaults;
     [userDefaults setBool:value forKey:model.properties[NSStringFromSelector(sel)]];
     [userDefaults synchronize];
 }
 
 // Integer
-static NSInteger getIntegerValue(NSUserDefaultsModel *model, SEL sel) {
+static NSInteger getIntegerValue(UDUserDefaultsModel *model, SEL sel) {
     NSUserDefaults *userDefaults = model.userDefaults;
     return [userDefaults integerForKey:model.properties[NSStringFromSelector(sel)]];
 }
 
-static void setIntegerValue(NSUserDefaultsModel *model, SEL sel, NSInteger value) {
+static void setIntegerValue(UDUserDefaultsModel *model, SEL sel, NSInteger value) {
     NSUserDefaults *userDefaults = model.userDefaults;
     [userDefaults setInteger:value forKey:model.properties[NSStringFromSelector(sel)]];
     [userDefaults synchronize];
 }
 
 // Double
-static double getDoubleValue(NSUserDefaultsModel *model, SEL sel) {
+static double getDoubleValue(UDUserDefaultsModel *model, SEL sel) {
     NSUserDefaults *userDefaults = model.userDefaults;
     return [userDefaults doubleForKey:model.properties[NSStringFromSelector(sel)]];
 }
 
-static void setDoubleValue(NSUserDefaultsModel *model, SEL sel, double value) {
+static void setDoubleValue(UDUserDefaultsModel *model, SEL sel, double value) {
     NSUserDefaults *userDefaults = model.userDefaults;
     [userDefaults setDouble:value forKey:model.properties[NSStringFromSelector(sel)]];
     [userDefaults synchronize];
 }
 
 // Float
-static float getFloatValue(NSUserDefaultsModel *model, SEL sel) {
+static float getFloatValue(UDUserDefaultsModel *model, SEL sel) {
     NSUserDefaults *userDefaults = model.userDefaults;
     return [userDefaults doubleForKey:model.properties[NSStringFromSelector(sel)]];
 }
 
-static void setFloatValue(NSUserDefaultsModel *model, SEL sel, float value) {
+static void setFloatValue(UDUserDefaultsModel *model, SEL sel, float value) {
     NSUserDefaults *userDefaults = model.userDefaults;
     [userDefaults setFloat:value forKey:model.properties[NSStringFromSelector(sel)]];
     [userDefaults synchronize];
 }
 
 // Long
-static long long getLongValue(NSUserDefaultsModel *model, SEL sel) {
+static long long getLongValue(UDUserDefaultsModel *model, SEL sel) {
     NSUserDefaults *userDefaults = model.userDefaults;
     return [[userDefaults objectForKey:model.properties[NSStringFromSelector(sel)]] longLongValue];
 }
 
-static void setLongValue(NSUserDefaultsModel *model, SEL sel, long long value) {
+static void setLongValue(UDUserDefaultsModel *model, SEL sel, long long value) {
     NSUserDefaults *userDefaults = model.userDefaults;
     [userDefaults setObject:@(value) forKey:model.properties[NSStringFromSelector(sel)]];
     [userDefaults synchronize];

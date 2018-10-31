@@ -6,9 +6,9 @@
 //  Copyright © 2018年 lc. All rights reserved.
 //
 
-#import "NSUserDefaultsModel.h"
+#import "UDUserDefaultsModel.h"
 
-@interface LCUserDefaultsModel : NSUserDefaultsModel
+@interface LCUserDefaultsModel : UDUserDefaultsModel
 
 @property (nonatomic, copy)    NSString *name;
 @property (nonatomic, assign)  NSInteger gender;
