@@ -2,7 +2,10 @@
  统一管理那些使用NSUserdefaults保存的值.  
  Blog:https://www.jianshu.com/p/681ef055f716  
  YIIFMDB:https://github.com/liuchongfaye/YIIFMDB (FMDB改进方案)  
- **注意:好多人跟我说以“NS”开头不好，我仔细想了想的确是有待改善，后续的库我会稍加注意。**
+ **注意:最开始的版本此库是以"NS"开头,叫"NSUserDefaultsModel"，但是这样会让人误以为是iOS系统的代码，为此将其改为"UDUserDefaultsModel"**
+ ```
+ pod 'UDUserDefaultsModel'
+ ```
 
 ## How to use
 
@@ -57,7 +60,5 @@ You can download this project and drag the code in the 'iOS-Objc' folder to your
 Of course，you can use Cocoapods.To install it simply add the following line to your Podfile:
 ```
 pod 'UDUserDefaultsModel'
-
-
 ```
 
