@@ -4,10 +4,10 @@
  Manage the values saved by NSUserdefaults. 
  Blog:https://www.jianshu.com/p/681ef055f716  
  YIIFMDB:https://github.com/liuchongfaye/YIIFMDB ( Improvement of FMDB)  
- 
+ **pod Installation**  
  ```
  pod 'UDUserDefaultsModel'
- ``
+ ```
 
 ## How to use
 
