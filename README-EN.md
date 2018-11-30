@@ -1,14 +1,17 @@
 [Chinese-Readme](https://github.com/liuchongfaye/UDUserDefaultsModel/blob/master/README.md)
 
-# NSUserDefaultsModel
- 统一管理那些使用NSUserdefaults保存的值.  
+# UDUserDefaultsModel
+ Manage the values saved by NSUserdefaults. 
  Blog:https://www.jianshu.com/p/681ef055f716  
- YIIFMDB:https://github.com/liuchongfaye/YIIFMDB (FMDB改进方案)  
- **注意:好多人跟我说以“NS”开头不好，我仔细想了想的确是有待改善，后续的库我会稍加注意。**
+ YIIFMDB:https://github.com/liuchongfaye/YIIFMDB (Library of FMDB)  
+ **pod 'UDUserDefaultsModel'**
+ ```
+ pod 'UDUserDefaultsModel'
+ ``
 
 ## How to use
 
-Create a subclass of 'NSUserDefaultsModel' and declare some properties in '.h', like this:(创建一个基于NSUserDefaultsModel的子类，并在.h文件里定义一些属性，这些属性就是用来保存数值的key值)
+Create a subclass of 'UDUserDefaultsModel' and declare some properties in '.h', like this:
 ```
 // .h
 @property (nonatomic, copy)    NSString *name;
@@ -18,7 +21,7 @@ Create a subclass of 'NSUserDefaultsModel' and declare some properties in '.h', 
 @property (nonatomic, assign)  double doubleNumber;
 @property (nonatomic, assign)  BOOL isMan;
 ```
-Next,you must make those properties `@dynamic` in the .m file,like this:（接下来，必须要在.m当中对每一个属性执行'@dynamic'操作）
+Next,you must make those properties `@dynamic` in the .m file,like this:
 ```
 // .m
 @dynamic name;
@@ -30,10 +33,9 @@ Next,you must make those properties `@dynamic` in the .m file,like this:（接�
 ```
 If you want to get the 'name', you just use `[Subclass userDefaultsModel].name`.
 If you want to set the 'name' and save it, you just use `[Subclass userDefaultsModel].name = @"nickname"`.
-(如果想获取'name'这个属性，只需要使用 `[Subclass userDefaultsModel].name`就行，重置'name'，只需要调用`[Subclass userDefaultsModel].name = @"nickname"`就可以)
 
 ### Setup default values
-If you want to set some default values, you just override the method `setupDefaultValues` in .m file,like this:(设置默认值)
+If you want to set some default values, you just override the method `setupDefaultValues` in .m file,like this:
 ```
 // Setup default values
 - (NSDictionary *)setupDefaultValues {
@@ -48,7 +50,7 @@ If you want to set some default values, you just override the method `setupDefau
 }
 ```
 
-如果想要设置NSUserDefaults的suiteName，那么要在子类里重写`_suiteName`方法,比如：
+Of course,you can setup NSUserDefaults' "suiteName",here you can override the method "_suiteName",like this：
 ```
 - (NSString *)_suiteName {
     return @"lc.UserDefatults";
@@ -58,6 +60,5 @@ If you want to set some default values, you just override the method `setupDefau
 You can download this project and drag the code in the 'iOS-Objc' folder to your project.
 Of course，you can use Cocoapods.To install it simply add the following line to your Podfile:
 ```
-pod 'NSUserDefaultsModel'
+pod 'UDUserDefaultsModel'
 ```
-
