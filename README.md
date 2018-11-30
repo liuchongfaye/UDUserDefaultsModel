@@ -55,7 +55,7 @@
     return @"lc.UserDefatults";
 }
 ```
-#### Installation
+#### 安装与使用
 你可以下载下来此工程，随后将'iOS-Objc'文件夹下的类文件导入你的工程.
 当然，你也可以使用Cocoapods，只需要在podfile里写入如下代码并执行pod install就可以:
 ```
