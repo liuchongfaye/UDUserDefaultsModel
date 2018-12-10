@@ -1,7 +1,7 @@
 
 [英文Readme](https://github.com/liuchongfaye/UDUserDefaultsModel/blob/master/README-EN.md)
 # UDUserDefaultsModel
- 统一管理那些使用NSUserdefaults保存的值.  
+ 统一管理那些使用NSUserdefaults保存的值.(原库名称：NSUserDefaultsModel)  
  Blog:https://www.jianshu.com/p/681ef055f716  
  YIIFMDB:https://github.com/liuchongfaye/YIIFMDB (FMDB改进方案)  
  **注意:最开始的版本此库是以"NS"开头,但是这样会让人误以为是iOS系统的代码，为此将其改为"UDUserDefaultsModel"**
