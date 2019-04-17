@@ -24,6 +24,7 @@
     // Init
     LCUserDefaultsModel *userDefaultsModel = [LCUserDefaultsModel userDefaultsModel];
     
+    // demo举例：存值与取值
     NSLog(@"name = %@", userDefaultsModel.name);
     userDefaultsModel.name = @"Near1sssss";
     NSLog(@"gender = %ld", (long)userDefaultsModel.gender);
