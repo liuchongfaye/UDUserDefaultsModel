@@ -36,9 +36,10 @@
             NSDictionary *defaults = [self setupDefaultValues];
             if (defaults) {
                 [self.userDefaults registerDefaults:defaults];
-                [self exchangeAccessMethods];
             }
         }
+        
+        [self exchangeAccessMethods];
     }
     
     return self;
